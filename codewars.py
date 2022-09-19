@@ -21,18 +21,29 @@ def user_friendly_size(file_size) -> str:
     return f'{file_size / 2 ** (sym_index * 10):.2f} {symbols[sym_index]}'
 
 
+# def counting_valleys(s):
+#     val = lev = 0
+#     for ch in s:
+#         if ch == 'U':
+#             lev += 1
+#             if lev == 0:
+#                 val += 1
+#         if ch == 'D':
+#             lev -= 1
+#             if lev == -1:
+#                 val += 1
+#     return (val // 2)
+
+
 def counting_valleys(s):
-    val = lev = 0
+    valley = level = 0
     for ch in s:
         if ch == 'U':
-            lev += 1
-            if lev == 0:
-                val += 1
+            level += 1
+            if level == 0:
+                valley += 1
         if ch == 'D':
-            lev -= 1
-            if lev == -1:
-                val += 1
-    return (val // 2)
-
+            level -= 1
+    return valley
 
 
