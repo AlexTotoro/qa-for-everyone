@@ -33,3 +33,6 @@ def counting_valleys(s):
             if lev == -1:
                 val += 1
     return (val // 2)
+
+
+
