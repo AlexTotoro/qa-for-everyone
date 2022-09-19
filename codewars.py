@@ -37,13 +37,8 @@ def user_friendly_size(file_size) -> str:
 
 def counting_valleys(s):
     valley = level = 0
-    for ch in s:
-        if ch == 'U':
-            level += 1
-            if level == 0:
-                valley += 1
-        if ch == 'D':
-            level -= 1
+    for path in s:
+        level += {'F': 0, 'U': 1, 'D': -1}[path]
+        if level == 0 and path == 'U':
+            valley += 1
     return valley
-
-
