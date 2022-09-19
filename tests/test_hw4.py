@@ -1,7 +1,7 @@
 import pytest
 from my_calc import *
 
-test_cases = ((1, 2), (3, 4), (-1, 4), (3, -10), (10, 0))
+test_cases = ((1, 2), (3, 4), (-1, 4), (3, -10), (10, 0), (0, 6), (-4, 2), (18, -7))
 
 
 @pytest.mark.parametrize('a, b', test_cases)
