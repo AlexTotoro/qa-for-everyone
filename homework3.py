@@ -10,9 +10,9 @@ print('\nTask 3.1 answer: ' + ', '.join(str(item) for item in my_list[2]))
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
 print(f'\nTask 3.2.1 answer: {sum([l1_item for l1_item in list_1 if str(l1_item).isdigit()])}')
-print(f'\nTask 3.2.2 answer: {list([l1_item for l1_item in list_1 if "a" in str(l1_item)])}')
+print(f'Task 3.2.2 answer: {[l1_item for l1_item in list_1 if "a" in str(l1_item)]}')
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-list2 = ['cat', 'dog', 'horse', ']cow']
+list2 = ['cat', 'dog', 'horse', 'cow']
 print(f'\nTask 3.3 answer: {tuple(list2)}')
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 print('\nTask 3.4:')
